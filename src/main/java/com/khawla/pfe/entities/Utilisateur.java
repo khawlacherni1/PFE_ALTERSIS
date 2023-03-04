@@ -44,8 +44,8 @@ public class Utilisateur {
 
     String email;
     
-    @JsonIgnore
-	@OneToMany(cascade = CascadeType.ALL)
-	Set<Offre> offre; //postuler un offre
+    //@JsonIgnore
+	//@OneToMany(cascade = CascadeType.ALL)
+	//Set<Offre> offre; //postuler un offre
 
 }
