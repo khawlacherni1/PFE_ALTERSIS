@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import com.khawla.pfe.Repositories.OffreRepo;
-import com.khawla.pfe.entities.Offre;
+import com.khawla.pfe.entities.Offer;
 
 
 @Service
@@ -19,25 +19,25 @@ public class OffreService {
 
 	
 	
-    public Offre addOffre(Offre offre) {
-        return offreRepo.save(offre);
+    public Offer addOffer(Offer offer) {
+        return offreRepo.save(offer);
     }
 
     
-    public void deleteOffre(Long idOffre) {
-        offreRepo.deleteById(idOffre);
-        System.out.println("Offre supprimé");
+    public void deleteOffer(Long idOffer) {
+        offreRepo.deleteById(idOffer);
+        System.out.println("Offer deleted");
     }
 
     
-    public Offre FindOffre(Long idOffre) {
-    	Offre a = offreRepo.findById(idOffre).orElse(null);
+    public Offer FindOffer(Long idOffer) {
+    	Offer a = offreRepo.findById(idOffer).orElse(null);
 		System.out.println(a);
 		return (a);
 	}
     
-    public void UpdateOffre(Offre offre) {
-    	offreRepo.saveAndFlush(offre);
+    public void UpdateOffer(Offer offer) {
+    	offreRepo.saveAndFlush(offer);
 	}
     
 
