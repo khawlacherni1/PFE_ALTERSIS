@@ -69,5 +69,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>PFE-2</finalName>
 	</build>
 </project>
